@@ -1,0 +1,134 @@
+.footer__right {
+  @extend %flex-column;
+  font-size: 20px;
+  line-height: 203%;
+  color: #ffffff;
+  margin: 54px 0 0 377px;
+  @include w1024 {
+    margin: 60px 0 0 165px;
+  }
+  @include w480 {
+    display: block;
+    margin: 0 0 0 10px;
+    padding: 0;
+    font-size: 17.1613px;
+    line-height: 193%;
+  }
+}
+.footer__contacts {
+  width: 183px;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 40px;
+  text-align: center;
+  padding-bottom: 20px;
+  @include w480 {
+    text-align: start;
+    font-size: 21px;
+    line-height: 25px;
+    margin: 44px 0 0 0;
+    padding-bottom: 26px;
+  }
+}
+.footer__address {
+  @include w480 {
+    padding-bottom: 26px;
+  }
+}
+.footer__phone {
+  @include footer-contacts(
+    225px,
+    43px,
+    28px,
+    28px,
+    url("../../img/2849835-call-cell-communication-interface-multimedia-phone-telephone_108000\ 1.png"),
+    43px,
+    182px
+  );
+  @include w480 {
+    width: 194px;
+    padding-left: 37px;
+    &::before {
+      top: -3px;
+      width: 24px;
+      height: 24px;
+    }
+    &:hover::after {
+      left: 36px;
+      bottom: -3px;
+      width: 155px;
+    }
+  }
+}
+.footer__socnetwork img {
+  padding-right: 20px;
+  @include w480 {
+    display: none;
+  }
+}
+.footer__inst {
+  @include footer-contacts(
+    140px,
+    40px,
+    27px,
+    27px,
+    url("../../img/icons8-instagram\ 1.png"),
+    40px,
+    85px
+  );
+  @include w480 {
+    display: block;
+    width: 124px;
+    padding-left: 38px;
+    &::before {
+      top: 0;
+    }
+    &:hover::after {
+      left: 36px;
+      bottom: 3px;
+      width: 75px;
+    }
+  }
+}
+.footer__mail {
+  @include footer-contacts(
+    250px,
+    38px,
+    32px,
+    32px,
+    url("../../img/Email_icon-icons.com_55919\ 1.png"),
+    38px,
+    190px
+  );
+  @include w480 {
+    width: 223px;
+    padding-left: 40px;
+    &::before {
+      top: -6px;
+    }
+    &:hover::after {
+      bottom: -2px;
+      width: 163px;
+    }
+  }
+}
+.copy {
+  position: absolute;
+  left: 1116px;
+  top: 371px;
+  font-size: 13px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+  @include w1024 {
+    position: absolute;
+    left: 864px;
+    top: 371px;
+  }
+  @include w480 {
+    position: static;
+    font-size: 11.1548px;
+    margin: 36px 0 0 180px;
+    text-align: start;
+  }
+}

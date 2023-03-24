@@ -1,0 +1,103 @@
+.footer__language, .footer__logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__menu, .footer__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__language a, .footer__menu a {
+  font-size: 20px;
+  text-decoration: none;
+}
+.footer__language a:hover, .footer__menu a:hover {
+  color: #ffffff;
+}
+
+.footer__time2, .footer__time1 {
+  position: absolute;
+  font-size: 20px;
+  color: #0f2d4a;
+}
+
+.footer__logo {
+  width: 425.22px;
+  height: 91px;
+  font-family: "Sofia Sans";
+  font-weight: 400;
+  font-size: 38.7869px;
+  line-height: 112%;
+  color: #0f2d4a;
+  padding: 54px 0 0 123px;
+}
+.footer__logo p {
+  padding-left: 10px;
+}
+.footer__logo span {
+  font-size: 26.8525px;
+}
+
+.footer__menu {
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  width: 76px;
+  height: 74px;
+  margin: 30px 0 0 126px;
+}
+.footer__menu a {
+  line-height: 135%;
+  color: #0f2d4a;
+}
+
+.footer__language {
+  width: 77px;
+  height: 23px;
+  margin: 27px 0 0 123px;
+}
+.footer__language a {
+  line-height: 23px;
+  color: #000000;
+}
+
+.active {
+  font-weight: bold;
+  padding-right: 11px;
+}
+.active::after {
+  content: "";
+  border-right: 1px solid black;
+  padding: 0 5px;
+}
+
+.footer__time1 {
+  height: 23px;
+  left: 355px;
+  top: 213px;
+  font-weight: 600;
+  line-height: 23px;
+}
+
+.footer__time2 {
+  width: 128px;
+  height: 54px;
+  left: 352px;
+  top: 246px;
+  line-height: 135%;
+}
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

@@ -1,0 +1,43 @@
+@import "_default";
+@import "_template";
+@import "_header-nav";
+@import "_header-content";
+@import "_statistics";
+@import "_why-you";
+@import "_what-servisec";
+@import "_form-img";
+@import "_footer-left";
+@import "_footer-right";
+
+.header {
+  background-image: url("../../img/Rectangle 1.jpg");
+  background-repeat: no-repeat;
+  width: $w100;
+  height: 663px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  @include w480 {
+    max-width: 320px;
+    width: 100%;
+    height: 568px;
+  }
+}
+footer {
+  position: relative;
+  @extend %flex;
+  max-width: 1400px;
+  width: $w100;
+  height: 400px;
+  background: linear-gradient(91.75deg, #a1c7d4 18.06%, #0680aa 98.16%);
+  margin-top: 96px;
+  @include w480 {
+    display: block;
+    width: 320px;
+    height: 568px;
+    background: linear-gradient(180deg, #a1c7d4 0%, #0680aa 100%);
+    margin: 30px 0 0 0;
+  }
+}
+.triangle {
+  margin: 100px 0 100px 100px;
+  @include triangle(50px, $mainColor);
+}

@@ -1,0 +1,149 @@
+.footer__left {
+  @extend %flex-column;
+  @include w480 {
+    display: block;
+  }
+}
+.footer__logo {
+  @extend %flex;
+  width: 425.22px;
+  height: 91px;
+  font-family: "Sofia Sans";
+  font-weight: 400;
+  font-size: 38.7869px;
+  line-height: 112%;
+  color: #0f2d4a;
+  padding: 54px 0 0 123px;
+  p {
+    padding-left: 10px;
+  }
+  span {
+    font-size: 26.8525px;
+  }
+  @include w1024 {
+    font-size: 30px;
+    padding: 60px 0 0 90px;
+    span {
+      font-size: 24px;
+    }
+  }
+  @include w480 {
+    width: 303.28px;
+    height: 64.91px;
+    padding: 30px 0 0 8px;
+    line-height: 87%;
+    p {
+      font-size: 27px;
+    }
+    span {
+      font-size: 19.1523px;
+    }
+  }
+}
+.footer__menu {
+  @extend %flex-column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  width: 76px;
+  height: 74px;
+  margin: 30px 0 0 126px;
+  a {
+    @extend %a-footer;
+    line-height: 135%;
+    color: #0f2d4a;
+  }
+  @include w1024 {
+    margin: 30px 0 0 90px;
+  }
+  @include w480 {
+    justify-content: space-between;
+    width: 54px;
+    height: 52.26px;
+    margin: 21px 0 0 10px;
+    gap: 0;
+    a {
+      font-size: 14px;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}
+.footer__language {
+  @extend %flex;
+  width: 77px;
+  height: 23px;
+  margin: 27px 0 0 123px;
+  a {
+    @extend %a-footer;
+    line-height: 23px;
+    color: #000000;
+  }
+  @include w1024 {
+    margin: 27px 0 0 90px;
+  }
+  @include w480 {
+    width: 53px;
+    height: 16px;
+    margin: 21px 0 0 10px;
+    a {
+      font-size: 14px;
+      line-height: 16px;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}
+.active {
+  font-weight: bold;
+  padding-right: 11px;
+  &::after {
+    content: "";
+    border-right: 1px solid black;
+    padding: 0 5px;
+  }
+  @include w480 {
+    padding-right: 8px;
+    &::after {
+      padding: 0 4px;
+    }
+  }
+}
+.footer__time1 {
+  @extend %footer-time;
+  height: 23px;
+  left: 355px;
+  top: 213px;
+  font-weight: 600;
+  line-height: 23px;
+  @include w1024 {
+    position: absolute;
+    left: 275px;
+    top: 213px;
+  }
+  @include w480 {
+    left: 180.52px;
+    top: 142.69px;
+    font-size: 14.2648px;
+  }
+}
+.footer__time2 {
+  @extend %footer-time;
+  width: 128px;
+  height: 54px;
+  left: 352px;
+  top: 246px;
+  line-height: 135%;
+  @include w1024 {
+    position: absolute;
+    left: 272px;
+    top: 246px;
+  }
+  @include w480 {
+    left: 178px;
+    top: 164px;
+    font-size: 14.2648px;
+  }
+}

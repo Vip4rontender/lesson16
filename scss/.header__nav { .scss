@@ -1,0 +1,253 @@
+.header__nav {
+  @extend %flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+  padding-left: $left;
+  max-width: 1180px;
+  width: $w100;
+  height: 91px;
+  @include w1024 {
+    padding: 30px 0 0 90px;
+    max-width: 890px;
+  }
+  @include w480 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    height: 39.16px;
+    margin: 0;
+  }
+}
+.header__logo {
+  @extend %flex;
+  min-width: 425px;
+  width: $w100;
+  max-height: 91px;
+  padding-right: 78px;
+  @include w1024 {
+    max-width: 340px;
+    min-width: 340px;
+    padding-right: 20px;
+    img {
+      width: 77.57px;
+      height: 80.56px;
+    }
+  }
+  @include w480 {
+    max-width: 183px;
+    min-width: 183px;
+    height: 39px;
+    padding: 30px 0 0 0;
+    img {
+      width: 33.39px;
+      height: 34.67px;
+    }
+  }
+}
+.logo__text {
+  font-family: "Sofia Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 53px;
+  color: $blueColor;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  span {
+    font-size: 26.8525px;
+  }
+  @include w1024 {
+    font-size: 30px;
+    span {
+      font-size: 24px;
+    }
+  }
+  @include w480 {
+    display: none;
+  }
+}
+.logo__text2 {
+  @extend %display;
+  @include w480 {
+    display: block;
+    font-family: "Sofia Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.6926px;
+    line-height: 108%;
+    color: #46b1de;
+    span {
+      font-family: "Sofia Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 11.5564px;
+      line-height: 140%;
+      color: #46b1de;
+    }
+  }
+}
+.nav {
+  max-width: 350px;
+  width: $w100;
+  height: 19px;
+  ul {
+    @extend %flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 19px;
+    list-style: none;
+  }
+  a {
+    @extend %a;
+  }
+  a:hover {
+    color: $blueColor;
+  }
+  @include w1024 {
+    max-width: 200px;
+  }
+  @include w480 {
+    display: none;
+  }
+}
+.header__phone {
+  @extend %flex;
+  max-width: 174px;
+  width: $w100;
+  padding-left: 81px;
+  a {
+    @extend %flex;
+    @extend %a;
+    align-self: center;
+  }
+  a:hover {
+    color: $blueColor;
+  }
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    padding-left: 5px;
+    background-image: url("../../img/-phone-in-talk_90490\ 1.png");
+    background-repeat: no-repeat;
+  }
+  @include w1024 {
+    padding-left: 10px;
+  }
+  @include w480 {
+    display: none;
+  }
+}
+.header__phone1 {
+  @extend %display;
+  @include w480 {
+    display: flex;
+    flex-direction: row;
+    width: 127px;
+    height: 15px;
+    padding: 34px 0 0 3px;
+    a {
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      color: #1b1d1f;
+      text-decoration: none;
+      &:hover {
+        color: #46b1de;
+      }
+    }
+    &::before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      padding-left: 3px;
+      background-image: url("../../img/-phone-in-talk_90490\ 1.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+.language {
+  @extend %flex;
+  max-width: 77px;
+  width: $w100;
+  height: 23px;
+  font-size: 20px;
+  line-height: 23px;
+  padding-left: 23px;
+  a {
+    @extend %a;
+  }
+  a:hover {
+    color: #46b1de;
+  }
+  @include w1024 {
+    padding-left: 10px;
+    p {
+      padding: 0 5px;
+    }
+  }
+  @include w480 {
+    display: none;
+  }
+}
+.language__ua {
+  font-weight: bold;
+  padding-right: 11px;
+  &::after {
+    content: "";
+    border-right: 1px solid black;
+    padding: 0 5px;
+  }
+  @include w480 {
+    display: none;
+  }
+}
+
+/* Burger */
+
+@include w480 {
+  .burger {
+    margin: 23px 0 0 298px;
+    span {
+      background: #1b1d1f;
+      height: 1px;
+      width: 15px;
+      display: block;
+      position: relative;
+      transition: all linear 0.3s;
+      &::after,
+      &::before {
+        background: #1b1d1f;
+        height: 1px;
+        width: 15px;
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 4px;
+        transition: all linear 0.3s;
+      }
+      &::before {
+        top: -4px;
+      }
+
+      /* Open Menu */
+
+      &:active {
+        width: 0;
+        background: #46b1de;
+        &::before {
+          transform: rotate(-45deg);
+          top: 0;
+          background: #46b1de;
+        }
+        &::after {
+          transform: rotate(45deg);
+          top: 0;
+          background: #46b1de;
+        }
+      }
+    }
+  }
+}

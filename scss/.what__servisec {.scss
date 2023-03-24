@@ -1,0 +1,252 @@
+.what__servisec {
+  position: relative;
+  min-width: 1400px;
+  width: $w100;
+  height: 624px;
+  @include w480 {
+    position: static;
+    min-width: max-content;
+    height: max-content;
+    br {
+      display: none;
+    }
+  }
+}
+.services__text {
+  min-width: 493px;
+  width: $w100;
+  height: 40px;
+  @extend %h2;
+  line-height: 40px;
+  margin: 90px 0 50px 426px;
+  @include w1024 {
+    margin: 90px 0 50px 230px;
+  }
+  @include w480 {
+    min-width: 225px;
+    width: 225px;
+    height: 55px;
+    font-size: 22px;
+    line-height: 27px;
+    margin: 30px 30px;
+    text-align: center;
+  }
+}
+.services__card1 {
+  @extend %inline-opacity;
+  margin: 0 0 31px 195px;
+  text-align: right;
+  width: 338px;
+  @include anima-card(services__card1, -50%, -50%);
+  @include w1024 {
+    margin: 0 0 31px 63px;
+    text-align: right;
+    width: 305px;
+  }
+  @include w480 {
+    display: block;
+    margin: 0 0 20px 30px;
+    text-align: start;
+    width: 235px;
+  }
+}
+.services__card2 {
+  @extend %inline-opacity;
+  margin-left: 322px;
+  width: 290px;
+  @include anima-card(services__card2, 50%, -50%);
+  @include w1024 {
+    margin-left: 265px;
+    width: 285px;
+  }
+  @include w480 {
+    display: block;
+    margin: 0 0 20px 30px;
+    width: 235px;
+  }
+}
+.services__card3 {
+  @extend %inline-opacity;
+  margin: 0 0 29px 202px;
+  width: 283px;
+  text-align: right;
+  @include anima-card(services__card3, -50%, 0%);
+  @include w1024 {
+    margin: 0 0 29px 81px;
+    width: 260px;
+    text-align: right;
+  }
+  @include w480 {
+    display: block;
+    margin: 0 0 20px 30px;
+    width: 235px;
+    text-align: start;
+  }
+}
+.services__card4 {
+  @extend %inline-opacity;
+  width: 291px;
+  margin-left: 429px;
+  @include anima-card(services__card4, 50%, 0%);
+  @include w1024 {
+    margin-left: 316px;
+    width: 273px;
+  }
+  @include w480 {
+    display: block;
+    width: 235px;
+    margin: 0 0 20px 30px;
+  }
+}
+.services__card5 {
+  @extend %inline-opacity;
+  width: 316px;
+  text-align: right;
+  margin-left: 264px;
+  @include anima-card(services__card5, -50%, 50%);
+  @include w1024 {
+    width: 317px;
+    text-align: right;
+    margin-left: 93px;
+  }
+  @include w480 {
+    display: block;
+    width: 235px;
+    text-align: start;
+    margin: 0 0 20px 30px;
+  }
+}
+.services__card6 {
+  @extend %inline-opacity;
+  width: 308px;
+  margin-left: 236px;
+  @include anima-card(services__card6, 50%, 50%);
+  @include w1024 {
+    width: 305px;
+    margin-left: 202px;
+  }
+  @include w480 {
+    display: block;
+    width: 235px;
+    margin: 0 0 20px 30px;
+  }
+}
+.services__card {
+  position: absolute;
+  width: 330px;
+  height: 302px;
+  left: 535px;
+  top: 93px;
+  @include w1024 {
+    position: absolute;
+    width: 260px;
+    height: 232px;
+    left: 377px;
+    top: 126px;
+  }
+  @include w480 {
+    display: none;
+  }
+}
+.services__img1,
+.services__img2,
+.services__img3,
+.services__img4,
+.services__img5,
+.services__img6 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 687px;
+  top: 230px;
+  @include w1024 {
+    width: 20px;
+    height: 20px;
+    left: 494px;
+  }
+  @include w480 {
+    display: none;
+  }
+}
+.services__img1 {
+  @include anima-img(services__img1, -106px, -111px);
+  @include w1024 {
+    @include anima-img(services__img1, -74px, -92px);
+  }
+}
+.services__img2 {
+  @include anima-img(services__img2, 109px, -111px);
+  @include w1024 {
+    @include anima-img(services__img2, 84px, -90px);
+  }
+}
+.services__img3 {
+  @include anima-img(services__img3, -162px, 0);
+  @include w1024 {
+    @include anima-img(services__img3, -126px, 0);
+  }
+}
+.services__img4 {
+  @include anima-img(services__img4, 166px, 0);
+  @include w1024 {
+    @include anima-img(services__img4, 132px, 0);
+  }
+}
+.services__img5 {
+  @include anima-img(services__img5, -113px, 110px);
+  @include w1024 {
+    @include anima-img(services__img5, -76px, 94px);
+  }
+}
+.services__img6 {
+  @include anima-img(services__img6, 117px, 110px);
+  @include w1024 {
+    @include anima-img(services__img6, 91px, 88px);
+  }
+}
+.services__text2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 135%;
+  color: $blueColor;
+  margin-bottom: 5px;
+  @include w480 {
+    font-size: 18px;
+  }
+}
+.services__text3 {
+  @include w480 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.services__bottom {
+  @extend %flex;
+  font-size: 20px;
+  color: $blueColor;
+  margin: 59px 0 0 436px;
+  align-items: center;
+  img {
+    padding-right: 16px;
+  }
+  @include w1024 {
+    margin: 59px 0 0 230px;
+  }
+  @include w480 {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    font-size: 18px;
+    margin: 0 0 0 30px;
+    img {
+      width: 50px;
+      height: 50px;
+      margin: 5px auto;
+      padding: 0;
+    }
+    p {
+      text-align: center;
+      width: 250px;
+    }
+  }
+}
